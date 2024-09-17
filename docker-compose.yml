@@ -1,0 +1,19 @@
+services:
+    laravel.test:
+        image: amalitechservices/resource-manager-backend
+        container_name: rm-backend
+        ports:
+            - '${APP_PORT:-8003}:8003'
+
+    redis:
+        image: 'redis:alpine'
+        container_name: some-redis
+        ports:
+            - '${FORWARD_REDIS_PORT:-6379}:6379'
+        healthcheck:
+            test:
+                - CMD
+                - redis-cli
+                - ping
+            retries: 3
+            timeout: 5s

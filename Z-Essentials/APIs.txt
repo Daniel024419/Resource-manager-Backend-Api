@@ -1,0 +1,45 @@
+
+1. **Authentication Routes:**
+    - Login: `POST /v1/users/login` (named as `api.login`)
+    - Logout: `POST /v1/users/logout` (protected by Sanctum)
+    - Token Exchange: `GET /v1/users/token/exchange` (protected by Sanctum)
+
+2. **Protected User Routes:**
+    - Update User Information: `POST /v1/users/update` (protected by Sanctum)
+    - Update Initial Password: `PUT /v1/users/update/initial/password` (protected by Sanctum)
+    - Update New Password: `PUT /v1/users/update/new/password` (protected by Sanctum)
+
+3. **Unprotected User Routes:**
+    - Update Password: `PUT /v1/users/update/password`
+    - Send OTP: `POST /v1/users/send-otp`
+
+4. **User Registration Routes:**
+    - Register User: `POST /v1/users/store` (protected by Sanctum)
+    - Search Users: `POST /v1/users/search` (protected by Sanctum)
+
+5. **Specialization Routes:**
+    - Store Specialization: `POST /v1/specialization/store` (protected by Sanctum)
+    - Update Specialization: `PUT /v1/specialization/update` (protected by Sanctum)
+    - Fetch Specialization: `GET /v1/specialization/fetch` (protected by Sanctum)
+    - Delete Specialization: `DELETE /v1/specialization/delete` (protected by Sanctum)
+
+6. **Department Routes:**
+    - Store Department: `POST /v1/department/store` (protected by Sanctum)
+    - Update Department: `PUT /v1/department/update` (protected by Sanctum)
+    - Fetch Department: `GET /v1/department/fetch` (protected by Sanctum)
+    - Delete Department: `DELETE /v1/department/delete` (protected by Sanctum)
+
+7. **Client Routes:**
+    - Store Client: `POST /v1/client/store` (protected by Sanctum)
+    - Update Client: `PUT /v1/client/update` (protected by Sanctum)
+    - Fetch Client: `GET /v1/client/fetch` (protected by Sanctum)
+    - Delete Client: `DELETE /v1/client/delete` (protected by Sanctum)
+    - Search Clients: `POST /v1/client/search` (protected by Sanctum)
+
+8. **Project Routes:**
+    - Store Project: `POST /v1/project/store` (protected by Sanctum)
+    - Update Project: `PUT /v1/project/update` (protected by Sanctum)
+    - Fetch Project: `GET /v1/project/fetch` (protected by Sanctum)
+    - Delete Project: `DELETE /v1/project/delete` (protected by Sanctum)
+    - Search Projects: `POST /v1/project/search` (protected by Sanctum)
+

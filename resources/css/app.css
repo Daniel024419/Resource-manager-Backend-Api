@@ -1,0 +1,28 @@
+body {
+    background: #f1f1f1;
+  }
+
+  * {
+    font-family: "Lexendum", "Helvetica Neue", Helvetica, Arial;
+  }
+  .email-card {
+    display: flex;
+    width: 350px;
+    height: 39rem;
+    padding: 10px 20px;
+    flex-direction: column;
+    background: #fff;
+    margin: 150px auto;
+  }
+
+  .divider {
+    width: 125px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.24);
+    margin-top: 50px;
+  }
+
+  .logo-container {
+    display: flex;
+    gap: 20px;
+  }
